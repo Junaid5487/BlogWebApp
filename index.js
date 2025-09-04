@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -54,6 +54,7 @@ app.post("/posts/:id/delete", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
