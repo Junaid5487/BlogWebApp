@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #1b1c1d;
+  
+}
+h1{
+    color: white;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  
+}
+a{
+    text-decoration: none;
+    color: #007bff;
+}
+a:visited{
+    text-decoration: none;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+hr{
+    border-width: 1px;
+}
+p{
+    color:rgb(187, 3, 233)
+}

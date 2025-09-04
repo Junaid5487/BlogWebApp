@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+<h1>My Blog</h1>
+
+
+<% if(posts.length === 0) { %>
+
+    <p>No posts yet.</p>
+
+<% } else { %>
+    <% posts.forEach(post => { %>
+        <div class="post">
+           <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+           
+        </div>
+    <% }) %>
+<% } %>
+
+<%- include("partials/footer") %>

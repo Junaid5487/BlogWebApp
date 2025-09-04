@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<h1>Create New Post</h1>
+<form action="/posts" method="POST">
+    <label for="title">Title:</label>
+    <input type="text" name="title" placeholder="Post Title" required>
+    <br>
+    <label for="content">Content:</label>
+    <textarea  name="content" placeholder="Write your content here" required></textarea>
+    <br>
+    <button type="submit">Create Post</button>
+</form>
+<a href="/">Back to Home</a>
+<%- include("partials/footer") %>
